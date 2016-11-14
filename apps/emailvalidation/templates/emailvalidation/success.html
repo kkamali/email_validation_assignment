@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Email Valid</title>
+    </head>
+    <body>
+        <h3>The email address you entered ({{valid_email}}) is a VALID email address! Thank you!</h3>
+        <hr>
+        <h2>Email Addresses Entered</h2>
+        {%for email in all_emails%}
+            {{email.email}} {{email.created_at}}
+        {%endfor%}
+    </body>
+</html>
